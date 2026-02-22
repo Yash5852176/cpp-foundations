@@ -28,7 +28,7 @@ class Employee {
         return monthlysalary * 12;
     }
     void displayDetails() const {
-         cout << "\n-------------------\n";
+        cout << "\n-------------------\n";
         cout << "Enter Employee name:"<< name << endl;
         cout << "Enter Registration Number:"<< reg_no << endl;
         cout << "Annual Salary:" << getAnnualSalary() << endl;
@@ -48,9 +48,9 @@ int main() {
     cin >> addMore;
     cin.ignore(numeric_limits<streamsize>::max(),'\n');       
     } while ( addMore == 'y' || addMore == 'Y');
-     cout << "\n --- All Employee Details ---\n";
-     for (const auto& emp: Employees) {
-     emp.displayDetails (); 
-     }
-     return 0;
+    cout << "\n --- All Employee Details ---\n";
+    for (const auto& emp: Employees) {
+    emp.displayDetails (); 
+    }
+    return 0;
 }
